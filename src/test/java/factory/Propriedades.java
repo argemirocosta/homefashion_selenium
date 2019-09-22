@@ -4,7 +4,7 @@ public class Propriedades {
 
     public static Browsers BROWSER = Browsers.FIREFOX;
 
-    public static TipoExecucao TIPO_EXECUCAO = TipoExecucao.LOCAL;
+    public static TipoExecucao TIPO_EXECUCAO = TipoExecucao.NUVEM;
 
     public enum Browsers {
         CHROME,
@@ -13,6 +13,7 @@ public class Propriedades {
 
     public enum TipoExecucao {
         LOCAL,
-        GRID
+        GRID,
+        NUVEM
     }
 }

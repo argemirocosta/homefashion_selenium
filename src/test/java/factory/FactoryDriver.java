@@ -37,6 +37,19 @@ public class FactoryDriver {
             }
         }
 
+        else if(propriedades.TIPO_EXECUCAO.equals(Propriedades.TipoExecucao.NUVEM)) {
+            DesiredCapabilities capabilities = null;
+            switch (propriedades.BROWSER){
+                case FIREFOX: capabilities = DesiredCapabilities.firefox(); break;
+                case CHROME: capabilities = DesiredCapabilities.chrome(); break;
+            }
+            try {
+                driver = new RemoteWebDriver(new URL("http://argemirocosta:86ce0617-a042-4c5a-8c27-fb897fb8177d@ondemand.saucelabs.com:80/wd/hub"), capabilities);
+            }catch (MalformedURLException e){
+                e.printStackTrace();
+            }
+        }
+
         driver.manage().window().setSize(new Dimension(1200, 765));
 
         return driver;

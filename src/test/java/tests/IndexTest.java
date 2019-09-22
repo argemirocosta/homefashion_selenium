@@ -4,7 +4,6 @@ import categories.NegativeTest;
 import categories.PositiveTest;
 import categories.SmokeTest;
 import factory.FactoryDriver;
-import factory.Propriedades;
 import org.junit.*;
 import org.junit.experimental.categories.Category;
 import org.openqa.selenium.WebDriver;
