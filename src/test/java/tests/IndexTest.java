@@ -4,6 +4,7 @@ import categories.NegativeTest;
 import categories.PositiveTest;
 import categories.SmokeTest;
 import factory.FactoryDriver;
+import factory.Propriedades;
 import org.junit.*;
 import org.junit.experimental.categories.Category;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +26,7 @@ public class IndexTest {
 
     @Before
     public void inicializa() {
-        driver = FactoryDriver.createDriver(Constantes.NOME_DO_NAVEGADOR);
+        driver = FactoryDriver.createDriver();
         driver.get(Constantes.PAGINA_PARA_TESTE);
         indexPage = new IndexPage(driver);
     }

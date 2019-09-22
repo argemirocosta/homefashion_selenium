@@ -3,6 +3,7 @@ package tests;
 import categories.PositiveTest;
 import categories.SmokeTest;
 import factory.FactoryDriver;
+import factory.Propriedades;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,7 +31,7 @@ public class ClienteTest {
 
     @Before
     public void inicializa() {
-        driver = FactoryDriver.createDriver(NOME_DO_NAVEGADOR);
+        driver = FactoryDriver.createDriver();
         driver.get(PAGINA_PARA_TESTE);
         indexPage = new IndexPage(driver);
     }
