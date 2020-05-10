@@ -5,7 +5,7 @@ public class Constantes {
     private Constantes() {}
 
     //Página
-    public static final String PAGINA_PARA_TESTE = "http://localhost:8080/home_fashion/";
+    public static final String PAGINA_PARA_TESTE = "https://home-fashion.herokuapp.com/";
 
     //Usuário Teste para login
     public static final String USUARIO_TESTE_LOGIN = "TESTEUSER";
